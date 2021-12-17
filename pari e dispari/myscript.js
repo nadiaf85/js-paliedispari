@@ -25,13 +25,16 @@ function sommaNumeri(numeroRandomPc,numeroUtente){
     return risultato;
 }
 
-//     for(let i=0; i<5; i++){
-//         if(numeroRandomPc %2 == 0){
-//             console.log('ha vinto l utente');
-//         }else{
-//             console.log('ha vinto il pc');
-//         }
 
-// }
+// Dichiariamo chi ha vinto.
+function vincente(){
+    if (somma %2 !=0){
+        console.log ('ha vinto l utente');
+    }else{
+        console.log ('ha vinto il pc');
+    }
+    return somma;
+}
+
 
     
