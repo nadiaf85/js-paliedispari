@@ -11,13 +11,16 @@ let pariDispari = prompt('pari o dispari?');
 let numeroUtente = parseInt(prompt('scegli un numero da 1 a 5'));
 
 //Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione)
-function randomPc(){
-    let numeroRandomPc = (Math.floor(Math.random()*5)+1);
-    return numeroRandomPc;
+let numeroPc = PcNumero();
+
+function PcNumero(numeroRandom){
+    let numeroPc = (Math.floor(Math.random()*5)+1);
+    return numeroPc;
 }
 
 // Sommiamo i due numeri
-let somma = numeroRandomPc + numeroUtente;
+let somma = numeroPc + numeroUtente;
+console.log(somma);
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 function controlloPD(){
@@ -31,13 +34,11 @@ function controlloPD(){
 
 let sommaNumeri = controlloPD();
 
-
 // Dichiariamo chi ha vinto.
-function vincente (){
     if (controlloPD ==0){
         console.log ('ha vinto l utente');
     }else{
         console.log ('ha vinto il pc');
     }
-}
+
 
