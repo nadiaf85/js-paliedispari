@@ -9,3 +9,6 @@ let parola = prompt('inserisci una parola');
 console.log('Anna')
 
 const nomeArray = ['A','N','N','A'];
+
+// Creare una funzione per capire se la parola inserita è palindroma
+function nomePal()

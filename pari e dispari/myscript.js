@@ -20,21 +20,24 @@ function randomPc(){
 let somma = numeroRandomPc + numeroUtente;
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-function sommaNumeri(numeroRandomPc,numeroUtente){
-    let risultato = numeroRandomPc + numeroUtente;
-    return risultato;
-}
-
-
-// Dichiariamo chi ha vinto.
-function vincente(){
+function controlloPD(){
     if (somma %2 !=0){
-        console.log ('ha vinto l utente');
+        console.log('dispari');
     }else{
-        console.log ('ha vinto il pc');
+        console.log('pari');;
     }
     return somma;
 }
 
+let sommaNumeri = controlloPD();
 
-    
+
+// Dichiariamo chi ha vinto.
+function vincente (){
+    if (controlloPD ==0){
+        console.log ('ha vinto l utente');
+    }else{
+        console.log ('ha vinto il pc');
+    }
+}
+
