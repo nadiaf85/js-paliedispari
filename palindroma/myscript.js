@@ -3,18 +3,34 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 
 
+
 // Chiedere all’utente di inserire una parola
-let parola = prompt('inserisci una parola');
-    console.log(parola);
+// let parola = prompt('inserisci una parola');
+// console.log(parola.length);
 
 
 // // Creare una funzione per capire se la parola inserita è palindroma
-function nomePal(){
+function checkParola(parola,nuovaParola){
     let risultato = false;
-    if(){
+    if(parola===nuovaParola){
         console.log('la parola inserita è palindroma');
+        risultato=true;
     }else{
         console.log('la parola inserita non è palindroma');
     }
     return risultato;
 }
+
+let parola = prompt('inserisci una parola');
+console.log(parola.length);
+
+let nuovaParola = '';
+
+for (let i=parola.length-1; i>=0; i--){
+    nuovaParola+=parola[i];
+}
+console.log(nuovaParola);
+
+    
+
+console.log(checkParola(parola,nuovaParola));
