@@ -9,7 +9,7 @@
 //L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
     document.addEventListener('click', function(){
     document.getElementById('pari-dispari')
-    .addEventListener('click', seleziona);
+    .addEventListener('input', seleziona);
 });
 
 function seleziona(a){
@@ -31,12 +31,17 @@ function seleziona(a){
 
     if (somma %2 !=0 && select.value=='pari'){
         console.log('hai perso');
+        let result=false;
     }if (somma %2 !=0 && select.value=='dispari'){
         console.log('hai vinto');
+        let result=true;
     }if(somma %2 ==0 && select.value=='pari'){
         console.log('hai vinto');
+        let result=true;
     }if(somma %2 ==0 && select.value=='dispari'){
     console.log('hai perso');
+        let result=false;
+
 
 }
 }
