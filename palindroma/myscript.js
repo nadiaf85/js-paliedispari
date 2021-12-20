@@ -4,11 +4,6 @@
 
 
 
-// Chiedere all’utente di inserire una parola
-// let parola = prompt('inserisci una parola');
-// console.log(parola.length);
-
-
 // // Creare una funzione per capire se la parola inserita è palindroma
 function checkParola(parola,nuovaParola){
     let risultato = false;
